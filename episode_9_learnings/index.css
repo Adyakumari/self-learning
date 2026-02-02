@@ -1,0 +1,92 @@
+.header{
+    display: flex;
+    justify-content:space-between;
+    border: solid black 1px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.nav-items {
+    padding: 0px 20px;
+
+}
+
+.nav-items > ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 24px;
+}
+
+.nav-items > ul > li{
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search{
+    padding: 10px;
+}
+
+.res-card{
+    margin: 5px;
+    width: 200px;
+    padding: 10px;
+}
+
+.res-card:hover{
+    cursor: pointer;
+    border: solid black 1px;
+}
+
+.res-logo {
+    width: 100%;
+}
+
+.filter-btn {
+    margin: 10px;
+    cursor: pointer;;
+}
+
+.shimmer-container {
+    display: flex;
+    flex-wrap:wrap;
+
+}
+
+.shimmer-card {
+    height: 400px;
+    width: 200px;
+    margin: 10px;
+    background-color: lightgrey;
+}
+
+.login-btn {
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.search-section {
+    padding: 10px;
+}
+
+.container{
+    display: flex;;
+}
+
+.user-card{
+    padding: 10px;
+    border: solid 1px black;
+}
+
+.user-class{
+    padding: 10px;
+    border: solid 1px black;
+}

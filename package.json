@@ -1,0 +1,31 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Namaste React app ",
+  "homepage": "https://github.com/Adyakumari/self-learning#readme",
+  "bugs": {
+    "url": "https://github.com/Adyakumari/self-learning/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adyakumari/self-learning.git"
+  },
+  "license": "ISC",
+  "author": "Adya kumari",
+  "type": "commonjs",
+  "scripts": {
+    "build": "parcel build index.html",
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "parcel": "^2.16.3",
+    "tailwindcss": "^4.1.18"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.13.0"
+  }
+}
