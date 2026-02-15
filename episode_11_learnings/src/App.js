@@ -11,11 +11,6 @@ import {Outlet} from "react-router";
 import RestaurantMenu from "./components/RestaurantMenu";
 import UserContext from "./utils/userContext";
 import { useState, useEffect } from "react";
-import { Provider } from "react-redux";
-import appStore from "./utils/appStore";
-import Cart from "./components/Cart";
-import Demo from "./components/Demo";
-import Demo2 from "./components/Demo2";
 // import Grocery from "./components/Grocery";
 
 //Use lazy loading to make a different chunk of this page (load the code only when we go to the grocery page, it will create different bundle grocery.js file for it)
@@ -42,7 +37,6 @@ const AppLayout = () => {
    setUserName(data.loggedInUser);
 }, [])
     return(
-      <Provider store={appStore}>
       <UserContext.Provider value={{loggedInUser: userName, setUserName}}> 
         <div className="layout">
            {/* <UserContext.Provider value={{loggedInUser: "Abhishek"}}>     //Abhishek will only show on header, other gets default value */} 
@@ -52,7 +46,6 @@ const AppLayout = () => {
             <Footer />
         </div>
       </UserContext.Provider>
-      </Provider>
     )
 }
 
@@ -85,14 +78,6 @@ const appRouter = createBrowserRouter([
     {
       path: "/restaurant/:resId",
       element: <RestaurantMenu /> 
-    },
-    {
-      path: "/cart",
-      element: <Cart />,
-    },
-    {
-      path: "/demo",
-      element: <><Demo /><Demo2 /></>
     }
     ],
     errorElement: <Error />
